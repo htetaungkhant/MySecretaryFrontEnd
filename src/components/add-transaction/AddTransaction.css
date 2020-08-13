@@ -1,0 +1,151 @@
+.main-div{
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2f4;
+}
+
+.main-div .form-div{
+    padding: 10px;
+    width: 50%;
+}
+
+.main-div .form-div * {
+    font-family: Roboto;
+    font-size: 18px;
+
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row > * {
+    width: 100%;
+}
+
+.select-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: bold;
+    border: 2px solid #F4D03F;
+    border-radius: 5px;
+    background-color: rgba(8, 187, 112, 1);
+    overflow: hidden;
+}
+
+.select-box:hover{
+    cursor: pointer;
+}
+
+.selected-item{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.select-list{
+    width: 50%;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+}
+
+.hide{
+    display: none;
+}
+
+.main-div .show{
+    display: block;
+    position: absolute;
+    margin-top: 44px;
+    overflow: hidden;
+}
+
+.select-item{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: rgba(8, 187, 112, 1);
+    border: 1px solid rgba(22, 236, 147, 1);
+    word-wrap: break-word;
+}
+
+.select-item:hover{
+    background-color: rgba(7, 158, 95, 1);
+    cursor: pointer;
+}
+
+.types{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px;
+    font-weight: bold;
+    border: 2px solid #F4D03F;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.type:last-child{
+    margin-left: 20px;
+}
+
+.label-for-type{
+    padding-left: 5px;
+}
+
+.main-div #amount-input{
+    padding: 8px 15px;
+    border: 2px solid #F4D03F;
+    border-radius: 5px;
+    outline: none;
+}
+
+#detail-input{
+    resize: none;
+    padding: 8px 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #F4D03F;
+}
+
+#btn-submit{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    border: 2px solid #000;
+    color: #F0F3F4;
+    background-color: #3498DB;
+}
+
+#btn-submit:hover{
+    background-color: #2E86C1;
+}
+
+@media(max-width: 700px) {
+    .main-div .form-div{
+        width: 90%;
+    }
+
+    .select-list{
+        width: 90%;
+    }
+
+    .types{
+        justify-content: space-evenly;
+    }
+
+    .type:last-child{
+        margin: 0;
+    }
+}

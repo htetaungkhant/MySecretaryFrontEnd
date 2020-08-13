@@ -1,0 +1,197 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F4F6F6;
+    border-bottom: 1px solid gray;
+    font-family: Roboto;
+     
+
+    /*
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    opacity: 0.97;
+    */
+
+    /*
+    max-width: 1024px;
+    margin: 0 auto;
+    */
+}
+
+.left-menu{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.title{
+    color: #457b9d;
+    padding-bottom: 7px;
+    text-decoration: ;
+}
+
+.mobile-right-menu{
+    display: none;
+}
+
+.right-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-menu > li {
+    padding: 10px;
+}
+
+.right-menu > li:nth-last-child(2){
+    padding: 0px;
+}
+
+.right-menu > li:last-child{
+    padding: 0px;
+}
+
+.right-menu button{
+    color: #457b9d;
+    font-size: 18px;
+    background-color: #F4F6F6;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.right-menu button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fun-sub-menu{
+    cursor: default;
+    margin-top: 5px;
+    display: none;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #F4F6F6;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+}
+
+.fun-sub-menu:hover .fun-sub-menu{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fun-sub-menu button{
+    margin: 1px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.fun-sub-menu li:first-child{
+    border-top: 1px solid #457b9d;
+}
+
+.fun-sub-menu li{
+    border-bottom: 1px solid #457b9d;
+}
+
+.fun-sub-menu button:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #457b9d;
+}
+
+.right-menu > li:nth-child(2):hover {
+    cursor: pointer;
+}
+
+/*  This doen't correctly work on mobile phones
+.right-menu > li:nth-child(2):hover .fun-sub-menu{
+    display: block;
+}
+*/
+
+.header .hide{
+    display: none;
+}
+
+.header .show{
+    display: block;
+}
+
+button.btn-login-signup{
+    padding: 10px;
+    color: #1d3557;
+    border-radius: 10px;
+    border: 1px solid #457b9d;
+    outline: none;
+}
+
+button.btn-login-signup:hover{
+    color: #FFF;
+    background-color: #457b9d;
+    text-decoration: none;
+}
+
+button.btn-login-signup:active{
+    color: #FFF;
+    background-color: #264653;
+}
+
+@media(max-width: 1024px) {
+    .header{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 724px){
+    .right-menu{
+        display: none;
+    }
+
+    .right-menu.responsive{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        background-color: #FFF;
+    }
+
+    .menuItem button {
+        background-color: #FFF;
+    }
+
+    .mobile-right-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-right-menu > img{
+        padding: 10px;
+    }
+
+    .menuItem{
+        width: 100%;
+    }
+
+    .fun-sub-menu{
+        position: relative;
+    }
+
+    .fun-sub-menu > li {
+        border: none;
+    }
+}
